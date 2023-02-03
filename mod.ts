@@ -26,7 +26,7 @@ const result: HotList = await response.json();
 const questions: Question[] = result.data.map((x) => {
   console.log(x);
   return {
-    title: x?.target?.titleArea?.text,
+    title: x?.target?.title_area?.text,
     url: x?.target?.link?.url
   }
 });
