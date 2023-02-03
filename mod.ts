@@ -23,10 +23,13 @@ if (!response.ok) {
 //search result
 const result: HotList = await response.json();
 // article data {url: url, title:title }
-const questions: Question[] = result.data.map((x) => ({
-  title: x.target.titleArea.text,
-  url: x.target.link.url,
-}));
+const questions: Question[] = result.data.map((x) => {
+  console.log(x);
+  return {
+    title: x?.target?.titleArea?.text,
+    url: x?.target?.link?.url
+  }
+});
 // date format
 const yyyyMMdd = format(new Date(), "yyyy-MM-dd");
 // json path

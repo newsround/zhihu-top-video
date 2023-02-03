@@ -14,8 +14,6 @@ popular zhihu video search. Search data every hour.
 
 <!-- END -->
 
+## Archives
+
 History [./archives](./archives)
-
-### License
-
-MIT License release. See [LICENSE](./LICENSE)
