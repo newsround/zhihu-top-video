@@ -28,7 +28,7 @@ const questions: Question[] = result.data.map((x) => {
   return {
     title: x?.target?.title_area?.text,
     url: x?.target?.link?.url
-  };
+  }
 })
 // date format
 const yyyyMMdd = format(new Date(), "yyyy-MM-dd");
